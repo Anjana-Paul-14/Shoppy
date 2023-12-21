@@ -11,7 +11,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   <TooltipComponent content={title} position="BottomCenter">
-    <button
+    <button //to clopse and open sidebar from navbar
       type="button"
       onClick={() => customFunc()}
       style={{ color }}
