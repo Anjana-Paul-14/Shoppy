@@ -35,6 +35,7 @@ const Navbar = () => {
       <NavButton title='Menu' customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} color="blue" icon={<AiOutlineMenu/>}/>
       <div className='flex'>
       <NavButton title='Cart' customFunc={() => handleClick('cart')} color="blue" icon={<FiShoppingCart/>}/>
+      <NavButton title='Chat' dotColor='#03C9D7'customFunc={() => handleClick('chat')} color="blue" icon={<BsChatLeft/>}/>
       </div>
     </div>
   );
