@@ -42,7 +42,7 @@ const Navbar = () => {
 
   useEffect(() => { //7
     
-  },[]); //8
+  },[screenSize]); //8
 
   return (
     <div className='flex justify-between p-2 md:ml-6 md:mr-6 relative'>
