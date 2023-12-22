@@ -35,7 +35,7 @@ const Navbar = () => {
 
     window.addEventListener('resize', handleResize); //4
 
-    
+    handleResize (); //5
 
     
   }, []);
