@@ -28,7 +28,7 @@ const SparkLine = ({id, height, width, color, data, type, currentColor}) => {
        <Inject services={[SparklineTooltip]} />
  
     </SparklineComponent>
-  )
-}
+  );
+};
 
-export default SparkLine
+export default SparkLine;
