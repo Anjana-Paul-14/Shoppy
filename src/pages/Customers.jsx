@@ -17,7 +17,7 @@ const Customers = () => {
         <ColumnsDirective>
         {customersGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
         </ColumnsDirective>
-        <Inject services={[ Page, Toolbar]}/>
+        <Inject services={[ Page, Selection, Toolbar, Edit, Sort, Filter]}/>
       </GridComponent>
     </div>
   );
