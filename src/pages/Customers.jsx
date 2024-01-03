@@ -12,7 +12,8 @@ const Customers = () => {
         dataSource={customersData}
         allowPaging
         allowSorting
-        toolbar={['Search']}>
+        toolbar={['Delete']}
+        editSettings={{allowDeleting: true, allowEditing: true}}>
         <ColumnsDirective>
         {customersGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
         </ColumnsDirective>
