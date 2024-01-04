@@ -7,6 +7,9 @@ import { useStateContext } from '../contexts/ContextProvider';
 // /Users/anjana/Desktop/react/dashboard/node_modules/react-icons
 
 const Ecommerce = () => {
+
+  const { currentColor, currentMode } = useStateContext();
+
   return (
     // <div>ecommerce</div>
     <div className='mt-12'>
@@ -21,7 +24,7 @@ const Ecommerce = () => {
           <div className='mt-6'>
             <Button
             color = 'white'
-            bgColor='blue'
+            bgColor={currentColor}
             text='Download'
             borderRadius='10px'
             size=''md/>
@@ -86,12 +89,12 @@ const Ecommerce = () => {
                     <p className="text-gray-500 mt-1">Expense</p>
                   </div>
                   <div className="mt-5">
-                    <SparkLine currentColor='blue' id="line-sparkline" type="Line" height="80px" width="250px" data={SparklineAreaData} color='blue'/>
+                    <SparkLine currentColor={currentColor} id="line-sparkline" type="Line" height="80px" width="250px" data={SparklineAreaData} color={currentColor}/>
                   </div>
                   <div className="mt-10" >
                     <Button
                     color="white"
-                    bgColor='blue'
+                    bgColor={currentColor}
                     text="Download Report"
                     borderRadius="10px"
                   />
