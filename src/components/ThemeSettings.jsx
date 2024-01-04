@@ -6,9 +6,13 @@ import { themeColors } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 
-function ThemeSettings() {
+const ThemeSettings = () => {
   return (
-    <div>ThemeSettings</div>
+    <div>
+        <div>
+            <div></div>
+        </div>
+    </div>
   );
 };
 
