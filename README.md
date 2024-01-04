@@ -1,5 +1,5 @@
-## Project Title:
-React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban
+
+# React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban
 
 ## Project Overview:
 
