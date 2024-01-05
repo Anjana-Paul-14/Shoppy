@@ -34,21 +34,21 @@ const Cart = () => {
       <div className="float-right h-screen  duration-1000 ease-in-out dark:text-gray-200 transition-all dark:bg-[#484B52] bg-white md:w-400 p-8">
         <div className="flex justify-between items-center">
           <p className="font-semibold text-lg">Shopping Cart</p>
-          {/* <Button
+          <Button
             icon={<MdOutlineCancel />}
             color="rgb(153, 171, 180)"
             bgHoverColor="light-gray"
             size="2xl"
             borderRadius="50%"
             onClick={handleClose}
-          /> */}
-          <button
+          />
+          {/* <button
             type="button"
             onClick={handleClose}
             style={{ color: 'rgb(153, 171, 180)', borderRadius: '50%' }}
           >
             <MdOutlineCancel/>
-          </button>
+          </button> */}
         </div>
         {cartData?.map((item, index) => (
           <div key={index}>
