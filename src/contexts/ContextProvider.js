@@ -17,6 +17,14 @@ export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(true);
   const [isClicked, setIsClicked] = useState(initialState);
   
+  const handleClick = (clicked) => {
+    // Toggle the state for the clicked item
+    setIsClicked((prevIsClicked) => ({
+      ...initialState,
+      [clicked]: !prevIsClicked[clicked],
+    }));
+  };
+
 
   const setMode = (e) => {
     setCurrentMode(e.target.value);
@@ -28,7 +36,7 @@ export const ContextProvider = ({ children }) => {
     localStorage.setItem('colorMode', color);
   };
 
-  const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
+  // const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
 
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
