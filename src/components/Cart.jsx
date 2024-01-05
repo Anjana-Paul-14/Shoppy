@@ -21,10 +21,10 @@ import { Button } from '.';
 const Cart = () => {
   const { currentColor, setCartVisible,cartVisible  } = useStateContext();
 
-  // const handleClose = () => {
-  //   setCartVisible((prevCartVisible) => !prevCartVisible);
-  //   console.log("Closing the cart");
-  // };
+  const handleClose = () => {
+    setCartVisible((prevCartVisible) => !prevCartVisible);
+    console.log("Closing the cart");
+  };
   
 
   console.log("cartVisible:", cartVisible);
@@ -44,10 +44,8 @@ const Cart = () => {
           /> */}
           <button
             type="button"
-            // onClick={handleClose}
-            // onClick={() => setCartVisible(false)}
+            onClick={handleClose}
             style={{ color: 'rgb(153, 171, 180)', borderRadius: '50%' }}
-            // className="text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray"           
           >
             <MdOutlineCancel/>
           </button>
