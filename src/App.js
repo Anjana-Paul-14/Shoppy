@@ -3,13 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {FiSettings} from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import './App.css';
-import { Sidebar,Navbar, Footer, ThemeSettings,Cart } from './components';
+import { Sidebar,Navbar, Footer, ThemeSettings } from './components';
 import {Ecommerce, Calendar, Orders, Employees, Stacked, Pyramid, Customers, Kanban, Area,Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Line } from './pages';
 import { useStateContext } from './contexts/ContextProvider';
 
 const App =() => {
 
-  const {activeMenu, themeSettings, setThemeSettings,currentColor, currentMode,cartVisible} = useStateContext();
+  const {activeMenu, themeSettings, setThemeSettings,currentColor, currentMode} = useStateContext();
   
 
   return (
@@ -38,7 +38,7 @@ const App =() => {
             <Sidebar/>  
           </div>
         )}
-        {cartVisible && <Cart />}
+        {/* {cartVisible && <Cart />} */}
         <div className={
           activeMenu ? ' dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-72 w-full ' : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
         }>
