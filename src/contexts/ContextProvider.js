@@ -18,7 +18,6 @@ export const ContextProvider = ({ children }) => {
   const [isClicked, setIsClicked] = useState(initialState);
   
   const handleClick = (clicked) => {
-    // Toggle the state for the clicked item
     setIsClicked((prevIsClicked) => ({
       ...initialState,
       [clicked]: !prevIsClicked[clicked],
@@ -39,7 +38,6 @@ export const ContextProvider = ({ children }) => {
   // const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
 
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <StateContext.Provider value={{ currentColor, currentMode, activeMenu, screenSize, setScreenSize, handleClick, isClicked, initialState, setIsClicked, setActiveMenu, setCurrentColor, setCurrentMode, setMode, setColor, themeSettings, setThemeSettings }}>
       {children}
     </StateContext.Provider>
