@@ -6,7 +6,7 @@
 This is a  React Dashboard project "Shoppy". This dashboard is designed to streamline the workflow by incorporating a variety of functionalities. From managing schedules with the calendar to editing content with the built-in editor, visualizing tasks on a Kanban board, selecting dynamic colors with the color picker, and analyzing data through charts and graphs, this also includes organized lists for tracking orders, employees, and customers.
 ## Demo:
 Visit the following link to view the project : 
-https://anjanadashboard.netlify.app
+https://anjana-shoppy.netlify.app
 
 ## Key Features:
 
